@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        tailwind.config = {
+        theme: {
+            // Some useful comment
+            fontFamily: {
+            'opensans': ['"Open Sans"', 'sans-serif'],
+            'caladea': ['Caldea', 'sans-serif'] // Ensure fonts with spaces have " " surrounding it.
+            },
+
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    fadeBlack: 'rgba(0, 0, 0, 0.4)',
+                    fadeCyan: 'rgba(29, 78, 216, 0.4)',
+                },
+
+                backgroundImage: {
+                    'hero': "url('assets/cover.jpg')",
+                },
+            }
+        }
+        }
+    </script>
+
+    <title>Department of Tourism - It's more fun in the Philippines</title>
+
+</head>
+<body class="w-full min-h-screen">
+    <nav  class="navbar w-full flex items-center justify-center px-[1rem] py-[1rem] lg:px-[4rem] fixed z-10">
+        <div class="w-full max-w-[82rem] flex justify-between items-center cursor-pointer">
+            <a href="index.html"><div class="flex flex-col items-center justify-center hover:text-slate-300 cursor-pointer">
+                <h2 class="text-xs md:text-base font-semibold md:font-bold text-green-600">IT'S MORE FUN IN THE</h1>
+
+                <h2 class="text-xl md:text-2xl font-semibold md:font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-400 to-red-500">PHILIPPINES</h2>
+            </div></a>
+            
+            <ul class="flex flex-col md:flex-row md:items-center z-[-1] md:z-auto absolute md:static bg-blue-600 md:bg-transparent w-full md:w-auto left-0 top-[-400px] transiton-all ease-in duration-500">
+                <a href="#home" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 rounded-lg bg-red-600"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    Home
+                </li></a>
+
+                <a href="#whattodo" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    What To Do
+                </li></a>
+
+                <a href="#whattosee" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    What To See
+                </li></a>
+
+                <a href="#bepart" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    Be Part Of The Fun
+                </li></a>
+
+                <!-- <li class="mx-4 my-6 md:my-0">
+                    <a href="#contact" class="text-base font-semibold lg:font-bold text-white cursor-pointer hover:text-cyan-500">Contact</a>
+                </li> -->
+            </ul>
+
+            <!-- <i onclick="Menu(this)" class="fa-solid fa-bars text-white text-base md:text-lg lg:text-xl block md:hidden cursor-pointer"></i> -->
+            <span class="text-white text-2xl block md:hidden cursor-pointer">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+    </nav>
+
+    <!-- cover with hero -->
+    <div id="home" class="
+        w-full h-[32rem] md:h-[42rem]
+        bg-no-repeat bg-cover bg-center
+		bg-[url('assets/cover2.jpg')]
+        flex justify-center items-center
+        px-[1rem]
+    ">
+        <div class="w-full max-w-[42rem] flex flex-col justify-center items-center bg-fadeCyan py-[1rem] border-2 border-blue-700 rounded-lg">
+            <div class="flex flex-col justify-center items-center gap-[3rem] md:gap-[6rem]">
+                <p class="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center">THANK YOU FOR SHARING THE FUN.</p>
+
+                <div class="flex flex-col justify-center items-center">
+                    <p class="text-xl md:text-2xl lg:text-3xl text-slate-200 font-semibold text-center">#ITSMOREFUNINTHEPHILIPPINES</p>
+
+                    <p class="text-lg md:text-xl text-slate-200 font-normal text-center">As of May 05, 2023</p>
+
+                    <p class="text-lg md:text-xl text-slate-200 font-normal text-center">From Instagram</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- what to do section -->
+    <div id="whattodo" class="w-full py-[2rem] px-[1rem] bg-blue-200">
+        <div class="w-full max-w-[82rem] mx-auto">
+            <!-- title -->
+            <div class="flex w-full max-w-[64rem] flex-col gap-[0.5rem] mx-auto">
+                <h1 class="text-sm md:text-base font-semibold text-blue-600 text-center uppercase">What To Do</h1>
+
+                <p class="text-2xl md:text-5xl font-bold text-center text-blue-900">"Discover the Unexplored: Let us guide you through the lesser-known gems of your destination."</p>
+            </div>
+
+            <!-- cards -->
+           <div class="mt-[1rem] md:mt-[2rem] mx-auto flex justify-center items-center gap-[1rem] flex-wrap">
+                <!-- card -->
+                <div class="w-[32rem] rounded-t-md">
+                    <img src="assets/chocolate_hills.jpg" alt="" class="w-full object-cover h-[14rem]  rounded-t-md">
+
+                    <div class="p-[0.5rem] md:p-[1rem] bg-white rounded-b-md">
+                        <h1 class="text-lg uppercase font-bold text-red-600">get an adrenaline rush</h1>
+
+                        <p class="mt-[0.125] md:mt-[0.25rem] text-base font-normal text-zinc-500">Experience this tropical paradise on two wheels. In Davao, you can even bike while suspended in mid-air or try the sky swing at the Eden Nature Park and Mountain Resort. There is also the MoTOURismo Pilgrimage Caravan, developed to encourage motorbike enthusiasts to explore the open roads of the region, with a scenic route that traverses Nueva Vizcaya, Quirino, Isabela and Cagayan and ending in the picturesque Pagudpud Aquaduct, Ilocos Norte.</p>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="w-[32rem] rounded-t-md">
+                    <img src="assets/bask_on_beach.jpg" alt="" class="w-full object-cover h-[14rem]  rounded-t-md">
+
+                    <div class="p-[0.5rem] md:p-[1rem] bg-white rounded-b-md flex flex-col flex-auto">
+                        <h1 class="text-lg uppercase font-bold text-red-600">BASK ON THE BEACHES</h1>
+
+                        <p class="mt-[0.125] md:mt-[0.25rem] text-base font-normal text-zinc-500">For island-hopping adventures, visit the tranquil, turquoise waters of the Mercedes Group of Islands. Caramoan Island boasts of a 4,000- hectare limestone forest, rich with diverse flora and fauna aside, and perfect white sand beaches, serene lakes, deep caves, coves and rich marine life. A perfect diving spot for enthusiasts.</p>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="w-[32rem] rounded-t-md">
+                    <img src="assets/underwater.jpg" alt="" class="w-full object-cover h-[14rem]  rounded-t-md">
+
+                    <div class="p-[0.5rem] md:p-[1rem] bg-white rounded-b-md">
+                        <h1 class="text-lg uppercase font-bold text-red-600">GO ON AN UNDERWATER ADVENTURE</h1>
+
+                        <p class="mt-[0.125] md:mt-[0.25rem] text-base font-normal text-zinc-500">Palawan, known as nature’s Last Ecological Frontier, offers a deep dive into underwater adventures on the Tubbataha Reef, a UNESCO World Heritage site and sanctuary for more than 600 species of fish, as well as several species of sharks, whales, and dolphins. Visit Coron Bay, site of many shipwrecks from World War II, and take an exciting boat trip on the Puerto Princesa Underground River, voted one of the new 7 Wonders of Nature.</p>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="w-[32rem] rounded-t-md">
+                    <img src="assets/foodtrip.jpg" alt="" class="w-full object-cover h-[14rem]  rounded-t-md">
+
+                    <div class="p-[0.5rem] md:p-[1rem] bg-white rounded-b-md">
+                        <h1 class="text-lg uppercase font-bold text-red-600">TAKE A FOOD TRIP</h1>
+
+                        <p class="mt-[0.125] md:mt-[0.25rem] text-base font-normal text-zinc-500">The Philippines is home to diverse cuisines passed down through the generations and it continues to develop world-class cuisine using fresh local products. Eco and Agri tours are available, to bring travellers to the root of food production. Foodies looking to experience authentic Filipino farm-to-table cuisine can look forward to the culinary experiences in Bohol, which include a visit to a bee farm, strawberry garden, mushroom house and floating lunch buffet on a Loboc Riverboat. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- what to see section -->
+    <div id="whattosee" class="w-full py-[2rem] px-[1rem] bg-blue-200">
+        <div class="w-full max-w-[82rem] mx-auto">
+            <!-- title -->
+            <div class="flex w-full max-w-[64rem] flex-col gap-[0.5rem] mx-auto">
+                <h1 class="text-sm md:text-base font-semibold text-blue-600 text-center uppercase">What To see</h1>
+
+                <p class="text-2xl md:text-5xl font-bold text-center text-blue-900"> "From hidden gems to iconic landmarks, our 'what to see' section will take you on an unforgettable journey of exploration and adventure."</p>
+            </div>
+        </div>
+
+        <!-- cards -->
+        <div class="mt-[1rem] md:mt-[2rem] max-w-[82rem] w-full grid md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-5 gap-[1rem]">
+            <!-- card -->
+            <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
+                <div class="w-full xl:w-[249.59px] h-[300px]">
+                    <img src="assets/palawan.jpg" class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" alt="">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="text-xl md:text-2xl font-bold text-white">Palawan</h1>
+                    <p class="mb-3 text-base italic font-normal text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Known for its stunning natural beauty, pristine beaches, crystal-clear waters, and diverse marine life.</p>
+                    <a href="palawan.html"><button class="rounded-full bg-red-600 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button></a>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
+                <div class="w-full xl:w-[249.59px] h-[300px]">
+                    <img src="assets/siargao.jpg" class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" alt="">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="text-xl md:text-2xl font-bold text-white">Siargao</h1>
+                    <p class="h-[8rem] mb-3 text-base italic font-normal text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Known as the "Surfing Capital of the Philippines," it has gained worldwide popularity among surfers.</p>
+                    <a href="siargao.html"><button class="rounded-full bg-red-600 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button></a>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
+                <div class="w-full xl:w-[249.59px] h-[300px]">
+                    <img src="assets/cebu.jpg" class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" alt="">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="text-xl md:text-2xl font-bold text-white">Cebu</h1>
+                    <p class="h-[8rem] mb-3 text-base italic font-normal text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">It is the oldest city in the country and is known for its rich history.</p>
+                    <a href="cebu.html"><button class="rounded-full bg-red-600 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button></a>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
+                <div class="w-full xl:w-[249.59px] h-[300px]">
+                    <img src="assets/chocolatehills.jpg" class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" alt="">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="text-xl md:text-2xl font-bold text-white">Bohol</h1>
+                    <p class="h-[8rem] mb-3 text-base italic font-normal text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"> It is known for its stunning natural wonders, white-sand beaches, and unique tourist attractions.</p>
+                    <a href="bohol.html"><button class="rounded-full bg-red-600 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button></a>
+                </div>
+            </div>
+
+            <!-- card -->
+            <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
+                <div class="w-full xl:w-[249.59px] h-[300px]">
+                    <img src="assets/vigan.jpg" class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" alt="">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <h1 class="text-xl md:text-2xl font-bold text-white">Vigan</h1>
+                    <p class="h-[8rem] mb-3 text-base italic font-normal text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"> It is known for its well-preserved Spanish colonial architecture, which has earned it a spot on the UNESCO World Heritage List.</p>
+                    <a href="vigan.html"><button class="rounded-full bg-red-600 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- be part of the fun section -->
+    <div id="bepart" class="
+        w-full h-[24rem] md:h-[32rem]
+        bg-no-repeat bg-cover bg-center
+		bg-[url('assets/gg3.svg')]
+        flex justify-center items-center
+        px-[1rem]
+    ">
+        <div class="w-full max-w-[42rem] flex flex-col justify-center items-center gap-[1rem] md:gap-[2rem]">
+            <div class="flex flex-col justify-center items-center gap-[1rem] md:gap-[2rem]">
+                <p class="text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-400 to-red-500 font-bold text-center">BE PART OF THE FUN TOO!</p>
+
+                <ul class="w-full flex flex-col items-center gap-[0.25rem] md:gap-[0.5rem]">
+                    <li class="w-full p-[0.5rem] border border-dashed border-red-400 text-base md:text-xl font-normal text-zinc-600">Share our proudly Philippine-made content</li>
+                    <li class="w-full p-[0.5rem] border border-dashed border-red-400 text-base md:text-xl font-normal text-zinc-600">Post your own <a href="https://www.instagram.com/explore/tags/itsmorefuninthephilippines/"><span class="text-blue-600 cursor-pointer">#itsmorefuninthephilippines</span></a> photos on Instagram</li>
+                    <li class="w-full p-[0.5rem] border border-dashed border-red-400 text-base md:text-xl font-normal text-zinc-600">Tag your Philippine travel photos with <a href="https://www.instagram.com/explore/tags/itsmorefuninthephilippines/"><span class="text-blue-600 cursor-pointer">#itsmorefuninthephilippines</span></a></li>
+                </ul>
+            </div> 
+
+            <div class="flex flex-col justify-center items-center gap-[0.5rem]">
+                <h1 class="text-base md:text-xl font-normal text-white md:text-zinc-600">Follow us!</h1>
+
+                <div class="flex gap-[0.5rem] items-center">
+                    <a href="https://www.facebook.com/itsmorefuninthePhilippines/"><i class="fa-brands fa-square-facebook text-xl md:text-3xl text-red-600 cursor-pointer"></i></a> 
+
+                    <a href="https://twitter.com/TourismPHL"><i class="fa-brands fa-square-twitter text-xl md:text-3xl text-red-600 cursor-pointer"></i></a>
+
+                    <a href="https://www.instagram.com/tourism_phl/"><i class="fa-brands fa-square-instagram text-xl md:text-3xl text-red-600 cursor-pointer"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-full flex items-center justify-center px-[1rem] py-[1rem] lg:px-[4rem] bg-blue-700">
+        <div class="w-full max-w-[82rem] flex flex-col md:flex-row md:justify-between items-center gap-[1rem] md:gap-0">
+            <div class="flex flex-col items-center justify-center hover:text-slate-300 cursor-pointer">
+                <h2 href="index.html" class="text-xs md:text-base font-semibold md:font-bold text-green-600">IT'S MORE FUN IN THE</h1>
+
+                <h2 class="text-xl md:text-2xl font-semibold md:font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-400 to-red-500">PHILIPPINES</h2>
+            </div>
+
+            <p class="text-xs md:text-base font-semibold md:font-bold text-white">© 2019 Department of Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+
+
+
+
+    <script src="script.js"></script>
+
+    <!-- navbar show/hide-->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[76px]') , list.classList.add('opacity-100')) : (e.name = "menu" , list.classList.remove('top-[76px]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+
+</body>
+</html>

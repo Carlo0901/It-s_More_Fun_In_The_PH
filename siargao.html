@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Siargao</title>
+</head>
+<body>
+    <style>
+        .relative {
+          overflow: hidden;
+        }
+        
+        .relative {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .relative:hover img {
+          transform: scale(1.25);
+        }
+        
+        .relative img {
+          transition: transform 0.5s ease-in-out;
+        }
+      </style>
+
+    <!-- navbar -->
+    <nav  class="navbar w-full flex items-center justify-center px-[1rem] py-[1rem] lg:px-[4rem] fixed z-10">
+        <div class="w-full max-w-[82rem] flex justify-between items-center cursor-pointer">
+            <a href="index.html"><div class="flex flex-col items-center justify-center hover:text-slate-300 cursor-pointer">
+                <h2 class="text-xs md:text-base font-semibold md:font-bold text-green-600">IT'S MORE FUN IN THE</h1>
+
+                <h2 class="text-xl md:text-2xl font-semibold md:font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-400 to-red-500">PHILIPPINES</h2>
+            </div></a>
+            
+            <ul class="flex flex-col md:flex-row md:items-center z-[-1] md:z-auto absolute md:static bg-blue-600 md:bg-transparent w-full md:w-auto left-0 top-[-400px] transiton-all ease-in duration-500">
+                <a href="index.html#home" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    Home
+                </li></a>
+
+                <a href="index.html#whattodo" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    What To Do
+                </li></a>
+
+                <a href="index.html#whattosee" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    What To See
+                </li></a>
+
+                <a href="index.html#bepart" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    Be Part Of The Fun
+                </li></a>
+
+                <!-- <li class="mx-4 my-6 md:my-0">
+                    <a href="#contact" class="text-base font-semibold lg:font-bold text-white cursor-pointer hover:text-cyan-500">Contact</a>
+                </li> -->
+            </ul>
+
+            <!-- <i onclick="Menu(this)" class="fa-solid fa-bars text-white text-base md:text-lg lg:text-xl block md:hidden cursor-pointer"></i> -->
+            <span class="text-white text-2xl block md:hidden cursor-pointer">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+    </nav>
+
+    <div class="h-screen w-full">
+        <img src="img/Siargao/siargao.jpg" alt="Palawan" class="h-[55%] w-screen object-cover">
+        
+        <!-- Palawan Info -->
+        <div>
+            <div>
+                <div class="w-11/12 m-auto">
+                    <h1 class="font-bold text-6xl mt-10">Siargao</h1>
+                    <p class="font-thin text-2xl mt-4">The Surfing Capital of the Philippines</p>
+                    <div class="border-b-2 border-gray-500"></div>
+
+                    <div class="align-items-center mt-10 bg-[url('img/banig.jpg')] bg-no-repeat bg-right">
+                        <p class="text-lg"><p class="font-bold inline-block">Siargao</p> is a stunning tear-shaped island located in the province of Surigao del Norte, in the northeastern part of Mindanao, Philippines. Known as the "Surfing Capital of the Philippines," it has gained worldwide popularity among surfers due to its world-class waves and laid-back island vibe.
+
+                            The island boasts a diverse range of activities and attractions for tourists, including surfing, island hopping, rock pools, lagoons, caves, and abundant marine life. Cloud 9, a world-renowned surf spot, is a reef break that offers powerful and hollow waves, attracting surfers from around the world. Siargao is surrounded by numerous small islands, each offering unique attractions such as hidden lagoons, white sand beaches, and crystal-clear waters.
+                            
+                            Other popular destinations on the island include the Magpupungko Rock Pools, a natural wonder that reveals crystal-clear waters during low tide, and the Sugba Lagoon, a tranquil body of water surrounded by lush vegetation and towering limestone cliffs.
+                            
+                            The island's relaxed and laid-back atmosphere is reflected in its beachfront accommodations, restaurants, and bars. Siargao's natural beauty, friendly locals, and world-class surf breaks make it a must-visit destination in the Philippines for surfers, nature lovers, and adventure seekers.                            
+                            </p>
+                    </div>
+                </div>
+
+                <!-- Slider main container -->
+                <div class="bg-gray-200">
+                    <div class="w-11/12 m-auto">
+                        <div class="swiper w-9/12 m-auto mt-10">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/Siargao/cloud9.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Siargao/magpupungko.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Siargao/sugbalagoon.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            ...
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- how to travel -->
+                <div class="mt-10 w-11/12 m-auto">
+                    <h1 class="font-bold text-3xl text-center">Wander to Siargao through Air, Sea and Land</h1>
+                    
+                    <div class="flex">
+                        <div class="mr-5">
+                            <div class="mt-8">
+                                <h1 class="font-bold text-3xl">By Plane:</h1>
+                                <p class="text-lg">The fastest and most convenient way to get to Siargao is by plane. You can book a flight from Manila, Cebu, or Davao to Siargao Island Airport. Major airlines such as Philippine Airlines, Cebu Pacific, and Skyjet offer daily flights to Siargao.</p>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h1 class="font-bold text-3xl">By Ferry:</h1>
+                                <p class="text-lg"> If you're traveling from Surigao City, you can take a ferry to Siargao Island. The ferry ride takes around 3 to 4 hours, depending on the weather conditions. You can take a ferry from the Port of Surigao to the Port of Dapa or the Port of Del Carmen.</p>
+                            </div>
+    
+                            <div class="mt-8">
+                                <h1 class="font-bold text-3xl">By Sea and Land:</h1>
+                                <p class="text-lg"> If you're coming from other parts of Mindanao, you can take a bus or van to Butuan City or Surigao City, and then take a ferry to Siargao Island.</p>
+                            </div>
+    
+                            <div class="mt-8">
+                                <p class="text-lg">Once you arrive in Siargao, you can take a tricycle, motorcycle, or van to your accommodation or your desired destination on the island. Siargao is a small island, and most places are easily accessible by motorbike or tricycle.</p>
+                            </div>
+                        </div>
+    
+                        <!-- Google Map -->
+                        <div class="h-full m-auto">
+                            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251542.95632644335!2d125.89454734561274!3d9.904053885967858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3304043652d9e9b3%3A0xd4c56a60c9a11b84!2sSiargao%20Island!5e0!3m2!1sen!2sph!4v1683317915241!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[url('img/Siargao/siargaosunset.jpg')] bg-cover bg-center mb-10">
+                    <div class="text-center py-10 mt-10 w-11/12 m-auto">
+                    
+                        <h1 class="font-bold text-3xl">What People Say</h1>
+    
+                        <div class="flex max-w-5xl mx-auto gap-8 group mt-5">
+                            <div class="duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover!scale-100 cursor-pointer p-8 rounded-xl bg-gray-300">
+                                <img src="img/blankperson.jpg" alt="" class="h-20 mx-auto rounded-full">
+                                <h4 class="uppercase text-xl font-bold">Ivan Delfin</h4>
+                                <p class="text-sm leading-7 my-3 font-light opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, quia vero minima alias quidem assumenda, libero eius maiores illum maxime, quibusdam quos deleniti aut asperiores sint nulla id harum?</p>
+                            </div>
+                            <div class="duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover!scale-100 cursor-pointer p-8 rounded-xl bg-gray-300">
+                                <img src="img/blankperson.jpg" alt="" class="h-20 mx-auto rounded-full">
+                                <h4 class="uppercase text-xl font-bold">Rhendel Dioso</h4>
+                                <p class="text-sm leading-7 my-3 font-light opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, quia vero minima alias quidem assumenda, libero eius maiores illum maxime, quibusdam quos deleniti aut asperiores sint nulla id harum?</p>
+                            </div>
+                            <div class="duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover!scale-100 cursor-pointer p-8 rounded-xl bg-gray-300">
+                                <img src="img/blankperson.jpg" alt="" class="h-20 mx-auto rounded-full">
+                                <h4 class="uppercase text-xl font-bold">Geofrey Aleman</h4>
+                                <p class="text-sm leading-7 my-3 font-light opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, quia vero minima alias quidem assumenda, libero eius maiores illum maxime, quibusdam quos deleniti aut asperiores sint nulla id harum?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More places to explore -->
+                <div class="pt-10 pb-10 bg-black">
+                    <div class="w-11/12 m-auto">
+                        <h1 class="font-bold text-3xl text-white">Visit more places here in Siargao</h1>
+
+                        <div class="flex justify-center items-center mt-5">
+                            <div class="grid grid-cols-5 gap-4 text-center">
+                            <!-- Image 1 -->
+                            <div class="relative">
+                                <img src="img/Siargao/alegriabeach.jpg" class="w-full h-full object-cover rounded-md" alt="Image 1">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Alegria Beach</div>
+                            </div>
+                            
+                            <!-- Image 2 -->
+                            <div class="relative">
+                                <img src="img/Siargao/daku.jpg" class="w-full h-full object-cover rounded-md" alt="Image 2">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Daku Island</div>
+                            </div>
+                            
+                            <!-- Image 3 -->
+                            <div class="relative">
+                                <img src="img/Siargao/sohoton.jpg" class="w-full h-full object-cover rounded-md" alt="Image 3">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Sohoton Cove</div>
+                            </div>
+                            
+                            <!-- Image 4 -->
+                            <div class="relative">
+                                <img src="img/Siargao/taktak.jpg" class="w-full h-full object-cover rounded-md" alt="Image 4">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Taktak Falls</div>
+                            </div>
+                            
+                            <!-- Image 5 -->
+                            <div class="relative">
+                                <img src="img/Siargao/magpupungko.jpg" class="w-full h-full object-cover rounded-md" alt="Image 5">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Magpupungko Rock Pools</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="w-full flex items-center justify-center px-[1rem] py-[1rem] lg:px-[4rem] bg-blue-700">
+            <div class="w-full max-w-[82rem] flex flex-col md:flex-row md:justify-between items-center gap-[1rem] md:gap-0">
+                <div class="flex flex-col items-center justify-center hover:text-slate-300 cursor-pointer">
+                    <h2 href="index.html" class="text-xs md:text-base font-semibold md:font-bold text-green-600">IT'S MORE FUN IN THE</h1>
+
+                    <h2 class="text-xl md:text-2xl font-semibold md:font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-400 to-red-500">PHILIPPINES</h2>
+                </div>
+
+                <p class="text-xs md:text-base font-semibold md:font-bold text-white">© 2019 Department of Tourism. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        speed:400,
+        spaceBetween:50,
+        autoplay: {
+            delay:3000,
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+    <!-- navbar show/hide-->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[76px]') , list.classList.add('opacity-100')) : (e.name = "menu" , list.classList.remove('top-[76px]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+</body>
+</html>

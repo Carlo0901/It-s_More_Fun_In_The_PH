@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Cebu</title>
+</head>
+<body>
+    <style>
+        .relative {
+          overflow: hidden;
+        }
+        
+        .relative {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .relative:hover img {
+          transform: scale(1.25);
+        }
+        
+        .relative img {
+          transition: transform 0.5s ease-in-out;
+        }
+      </style>
+    <!-- navbar -->
+    <nav  class="navbar w-full flex items-center justify-center px-[1rem] py-[1rem] lg:px-[4rem] fixed z-10">
+        <div class="w-full max-w-[82rem] flex justify-between items-center cursor-pointer">
+            <a href="index.html"><div class="flex flex-col items-center justify-center hover:text-slate-300 cursor-pointer">
+                <h2 class="text-xs md:text-base font-semibold md:font-bold text-green-600">IT'S MORE FUN IN THE</h1>
+
+                <h2 class="text-xl md:text-2xl font-semibold md:font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-400 to-red-500">PHILIPPINES</h2>
+            </div></a>
+            
+            <ul class="flex flex-col md:flex-row md:items-center z-[-1] md:z-auto absolute md:static bg-blue-600 md:bg-transparent w-full md:w-auto left-0 top-[-400px] transiton-all ease-in duration-500">
+                <a href="index.html#home" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    Home
+                </li></a>
+
+                <a href="index.html#whattodo" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    What To Do
+                </li></a>
+
+                <a href="index.html#whattosee" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    What To See
+                </li></a>
+
+                <a href="index.html#bepart" class="px-4 py-[0.75rem] md:py-[0.25rem] md:my-0 hover:bg-red-600 rounded-lg"><li class="text-base font-semibold lg:font-bold text-white cursor-pointer">
+                    Be Part Of The Fun
+                </li></a>
+
+                <!-- <li class="mx-4 my-6 md:my-0">
+                    <a href="#contact" class="text-base font-semibold lg:font-bold text-white cursor-pointer hover:text-cyan-500">Contact</a>
+                </li> -->
+            </ul>
+
+            <!-- <i onclick="Menu(this)" class="fa-solid fa-bars text-white text-base md:text-lg lg:text-xl block md:hidden cursor-pointer"></i> -->
+            <span class="text-white text-2xl block md:hidden cursor-pointer">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+    </nav>
+
+    <div class="h-screen w-full">
+        <img src="img/Cebu/cebu.jpg" alt="Palawan" class="h-[55%] w-screen object-cover">
+        
+        <!-- Palawan Info -->
+        <div>
+            <div>
+                <div class="w-11/12 m-auto">
+                    <h1 class="font-bold text-6xl mt-10">Cebu</h1>
+                    <p class="font-thin text-2xl mt-4">Queen City of the South</p>
+                    <div class="border-b-2 border-gray-500"></div>
+
+                    <div class="align-items-center mt-10 bg-[url('img/banig.jpg')] bg-no-repeat bg-right">
+                        <p class="text-lg"><p class="font-bold inline-block"><p class="font-bold inline-block">Cebu</p> is a province located in the Central Visayas region of the Philippines. It is the oldest city in the country and is known for its rich history, vibrant culture, stunning beaches, and breathtaking natural wonders.
+
+                            One of the top tourist destinations in Cebu is the city of Cebu, which is also known as the "Queen City of the South." The city is home to many historical landmarks, including the Basilica del Santo Niño, a 16th-century church that houses the oldest religious relic in the country, and the Magellan's Cross, which was planted by Portuguese explorer Ferdinand Magellan in 1521.
+                            
+                            Cebu is also known for its beaches, with many popular destinations such as Mactan Island, Malapascua Island, and Bantayan Island. These beaches offer crystal-clear waters, pristine white sand, and various water activities such as diving, snorkeling, and island hopping.
+                            
+                            Apart from its beaches, Cebu has many natural wonders, including the Osmeña Peak, which is the highest peak in the province and offers panoramic views of the surrounding landscape, and the Kawasan Falls, a three-tiered waterfall located in the town of Badian.
+                            
+                            Cebu is also famous for its food, with many popular dishes such as lechon (roasted pig), dried mangoes, and Cebu-style chorizo. The province is also home to many festivals, including the Sinulog Festival, which is a grand celebration in honor of the Santo Niño held every January.
+                            
+                            In summary, Cebu is a province that offers a mix of history, culture, stunning beaches, breathtaking natural wonders, and delicious cuisine. It is a must-visit destination for those looking for a diverse and exciting travel experience in the Philippines.                            
+                            </p>
+                    </div>
+                </div>
+
+                <!-- Slider main container -->
+                <div class="bg-gray-200">
+                    <div class="w-11/12 m-auto">
+                        <div class="swiper w-9/12 m-auto mt-10">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/Cebu/basilicadesantonino.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Cebu/kawasanfalls.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Cebu/mactan.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Cebu/malapascua.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Cebu/osmenapeak.jpg" alt="" class="object-center object-cover w-full h-3/6">
+                            </div>
+                            ...
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- how to travel -->
+                <div class="mt-10 w-11/12 m-auto">
+                    <h1 class="font-bold text-3xl text-center">Wander to Cebu through Air, Sea and Land</h1>
+                    
+                    <div class="flex">
+                        <div class="mr-5">
+                            <div class="mt-8">
+                                <h1 class="font-bold text-3xl">By Plane:</h1>
+                                <p class="text-lg"> Cebu has an international airport, Mactan-Cebu International Airport (CEB), which is located on Mactan Island, just a short distance from Cebu City. You can take a direct flight to Cebu from many cities in the Philippines and around the world.</p>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h1 class="font-bold text-3xl">By Ferry:</h1>
+                                <p class="text-lg"> Cebu has several ports that offer ferry services to nearby islands and cities, such as Bohol, Dumaguete, and Manila. The most popular ports in Cebu are Cebu City Pier 1 and Cebu City Pier 3.</p>
+                            </div>
+    
+                            <div class="mt-8">
+                                <h1 class="font-bold text-3xl">By Sea and Land:</h1>
+                                <p class="text-lg"> If you're coming from other parts of the Philippines, you can take a bus or a van to reach Cebu. The journey will involve a combination of land and sea travel, as you'll need to take a ferry from nearby islands to reach Cebu. Some popular routes include Cebu to Bohol, Cebu to Dumaguete, and Cebu to Leyte.</p>
+                            </div>
+
+                            <div class="mt-8">
+                                <h1 class="font-bold text-3xl">By Private transfer:</h1>
+                                <p class="text-lg"> You can also arrange for a private transfer, such as a car or a van, to take you from your starting point to Cebu. This can be a convenient and comfortable option if you're traveling with a group or with lots of luggage.</p>
+                            </div>
+    
+                            <div class="mt-8">
+                                <p class="text-lg">Once you arrive in Cebu, there are many transportation options available, including taxis, jeepneys, and buses, to help you explore the city and its surrounding areas.</p>
+                            </div>
+                        </div>
+    
+                        <!-- Google Map -->
+                        <div class="h-full m-auto">
+                            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125585.22489693675!2d123.76389270176708!3d10.37875394965501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1683320274446!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[url('img/Cebu/cebu.jpg')] bg-cover bg-center mb-10">
+                    <div class="text-center py-10 mt-10 w-11/12 m-auto">
+                    
+                        <h1 class="font-bold text-3xl">What People Say</h1>
+    
+                        <div class="flex max-w-5xl mx-auto gap-8 group mt-5">
+                            <div class="duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover!scale-100 cursor-pointer p-8 rounded-xl bg-gray-300">
+                                <img src="img/blankperson.jpg" alt="" class="h-20 mx-auto rounded-full">
+                                <h4 class="uppercase text-xl font-bold">Ivan Delfin</h4>
+                                <p class="text-sm leading-7 my-3 font-light opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, quia vero minima alias quidem assumenda, libero eius maiores illum maxime, quibusdam quos deleniti aut asperiores sint nulla id harum?</p>
+                            </div>
+                            <div class="duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover!scale-100 cursor-pointer p-8 rounded-xl bg-gray-300">
+                                <img src="img/blankperson.jpg" alt="" class="h-20 mx-auto rounded-full">
+                                <h4 class="uppercase text-xl font-bold">Rhendel Dioso</h4>
+                                <p class="text-sm leading-7 my-3 font-light opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, quia vero minima alias quidem assumenda, libero eius maiores illum maxime, quibusdam quos deleniti aut asperiores sint nulla id harum?</p>
+                            </div>
+                            <div class="duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover!scale-100 cursor-pointer p-8 rounded-xl bg-gray-300">
+                                <img src="img/blankperson.jpg" alt="" class="h-20 mx-auto rounded-full">
+                                <h4 class="uppercase text-xl font-bold">Geofrey Aleman</h4>
+                                <p class="text-sm leading-7 my-3 font-light opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, quia vero minima alias quidem assumenda, libero eius maiores illum maxime, quibusdam quos deleniti aut asperiores sint nulla id harum?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More places to explore -->
+                <div class="pt-10 pb-10 bg-black">
+                    <div class="w-11/12 m-auto">
+                        <h1 class="font-bold text-3xl text-white">Visit more places here in Cebu</h1>
+
+                        <div class="flex justify-center items-center mt-5">
+                            <div class="grid grid-cols-5 gap-4 text-center">
+                            <!-- Image 1 -->
+                            <div class="relative">
+                                <img src="img/Cebu/fortsanpedro.jpg" class="w-full h-full object-cover rounded-md" alt="Image 1">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Fort San Pedrp</div>
+                            </div>
+                            
+                            <!-- Image 2 -->
+                            <div class="relative">
+                                <img src="img/Cebu/magellanscross.jpg" class="w-full h-full object-cover rounded-md" alt="Image 2">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Magellan's Cross</div>
+                            </div>
+                            
+                            <!-- Image 3 -->
+                            <div class="relative">
+                                <img src="img/Cebu/taoisttemple.jpg" class="w-full h-full object-cover rounded-md" alt="Image 3">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Taoist Temple</div>
+                            </div>
+                            
+                            <!-- Image 4 -->
+                            <div class="relative">
+                                <img src="img/Cebu/tumalogfalls.jpg" class="w-full h-full object-cover rounded-md" alt="Image 4">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Tumalog Falls</div>
+                            </div>
+                            
+                            <!-- Image 5 -->
+                            <div class="relative">
+                                <img src="img/Cebu/siraofarm.jpg" class="w-full h-full object-cover rounded-md" alt="Image 5">
+                                <div class="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hover:bg-opacity-0 transition duration-500 text-white">Sirao Farm</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="w-full flex items-center justify-center px-[1rem] py-[1rem] lg:px-[4rem] bg-blue-700">
+            <div class="w-full max-w-[82rem] flex flex-col md:flex-row md:justify-between items-center gap-[1rem] md:gap-0">
+                <div class="flex flex-col items-center justify-center hover:text-slate-300 cursor-pointer">
+                    <h2 href="index.html" class="text-xs md:text-base font-semibold md:font-bold text-green-600">IT'S MORE FUN IN THE</h1>
+
+                    <h2 class="text-xl md:text-2xl font-semibold md:font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-yellow-400 to-red-500">PHILIPPINES</h2>
+                </div>
+
+                <p class="text-xs md:text-base font-semibold md:font-bold text-white">© 2019 Department of Tourism. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        speed:400,
+        spaceBetween:50,
+        autoplay: {
+            delay:3000,
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+    <!-- navbar show/hide-->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[76px]') , list.classList.add('opacity-100')) : (e.name = "menu" , list.classList.remove('top-[76px]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+</body>
+</html>
